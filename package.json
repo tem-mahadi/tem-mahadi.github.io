@@ -1,0 +1,39 @@
+{
+  "name": "mahadi-portfolio",
+  "version": "1.0.0",
+  "description": "Modern portfolio website for Hasan Al Mahadi - Mobile App Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve",
+    "dev": "npx live-server",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "lint:css": "stylelint \"css/**/*.css\"",
+    "lint:js": "eslint \"js/**/*.js\""
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "personal",
+    "developer",
+    "android",
+    "mobile-app",
+    "responsive",
+    "modern"
+  ],
+  "author": {
+    "name": "Hasan Al Mahadi",
+    "email": "mahadi4uruetcse21@gmail.com",
+    "url": "https://github.com/tem-mahadi"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tem-mahadi/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tem-mahadi/portfolio/issues"
+  },
+  "homepage": "https://tem-mahadi.github.io",
+  "devDependencies": {},
+  "dependencies": {}
+}

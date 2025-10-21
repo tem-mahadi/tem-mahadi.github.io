@@ -36,11 +36,28 @@ A modern, responsive, and feature-rich personal portfolio website showcasing my 
 ```
 MyPortfolio/
 │
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles and animations
-├── script.js           # JavaScript functionality
-└── README.md          # Project documentation
+├── index.html              # Main HTML file
+├── css/
+│   └── styles.css         # All styles and animations
+├── js/
+│   └── script.js          # All JavaScript functionality
+├── assets/
+│   ├── images/            # Portfolio images
+│   └── icons/             # Custom icons
+├── README.md              # Project documentation
+├── DOCS.md                # Developer documentation
+├── CONTRIBUTING.md        # Contribution guidelines
+├── CHANGELOG.md           # Version history
+├── LICENSE                # MIT License
+└── .gitignore            # Git ignore rules
 ```
+
+## 📚 Documentation
+
+- **[README.md](README.md)** - Quick start guide and overview
+- **[DOCS.md](DOCS.md)** - Complete developer documentation
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - How to contribute
+- **[CHANGELOG.md](CHANGELOG.md)** - Version history and updates
 
 ## 🚀 Getting Started
 
@@ -83,7 +100,7 @@ MyPortfolio/
 
 ### Changing Colors
 
-Edit the CSS variables in `styles.css`:
+Edit the CSS variables in `css/styles.css`:
 
 ```css
 :root {
