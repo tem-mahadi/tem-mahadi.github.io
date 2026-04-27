@@ -7,7 +7,9 @@ A modern, responsive, and feature-rich personal portfolio website showcasing my 
 
 ## ✨ Features
 
-- **🎨 Modern UI/UX Design**: Clean, professional interface with smooth animations
+- **🎨 Premium UI/UX Design**: Modern aesthetic with a floating pill navigation bar.
+- **✨ Glassmorphism**: Frosted glass effects on cards, forms, and containers for a sleek look.
+- **💫 Dynamic Micro-animations**: Floating skill icons, pulsing gradient orbs, and interactive hover states.
 - **🌓 Dark/Light Mode**: Toggle between themes with smooth transitions
 - **📱 Fully Responsive**: Optimized for all devices (mobile, tablet, desktop)
 - **⚡ Fast Performance**: Lightweight and optimized for speed
