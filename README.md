@@ -46,19 +46,11 @@ MyPortfolio/
 │   ├── images/            # Portfolio images
 │   └── icons/             # Custom icons
 ├── README.md              # Project documentation
-├── DOCS.md                # Developer documentation
-├── CONTRIBUTING.md        # Contribution guidelines
-├── CHANGELOG.md           # Version history
 ├── LICENSE                # MIT License
 └── .gitignore            # Git ignore rules
 ```
 
-## 📚 Documentation
 
-- **[README.md](README.md)** - Quick start guide and overview
-- **[DOCS.md](DOCS.md)** - Complete developer documentation
-- **[CONTRIBUTING.md](CONTRIBUTING.md)** - How to contribute
-- **[CHANGELOG.md](CHANGELOG.md)** - Version history and updates
 
 ## 🚀 Getting Started
 
