@@ -12,7 +12,6 @@ A modern, responsive, and feature-rich personal portfolio website showcasing my 
 - **📱 Fully Responsive**: Optimized for all devices (mobile, tablet, desktop)
 - **⚡ Fast Performance**: Lightweight and optimized for speed
 - **🎯 Interactive Elements**: Hover effects, typing animation, smooth scrolling
-- **📊 GitHub Stats Integration**: Real-time GitHub statistics display
 - **📧 Contact Form**: Easy way to get in touch
 - **🎨 Gradient Accents**: Eye-catching color schemes
 - **♿ Accessible**: Follows web accessibility standards
@@ -124,8 +123,7 @@ Edit the CSS variables in `css/styles.css`:
 2. **About** - Personal information and background
 3. **Skills** - Technical skills and technologies
 4. **Projects** - Featured projects with descriptions
-5. **GitHub Stats** - Real-time GitHub statistics
-6. **Contact** - Contact form and social links
+5. **Contact** - Contact form and social links
 
 ## 🌟 Features Breakdown
 
@@ -166,9 +164,11 @@ Edit the CSS variables in `css/styles.css`:
 - 📧 Email: [mahadi4uruetcse21@gmail.com](mailto:mahadi4uruetcse21@gmail.com)
 - 💼 LinkedIn: [hasan-al-mahadi](https://www.linkedin.com/in/hasan-al-mahadi/)
 - 🐱 GitHub: [tem-mahadi](https://github.com/tem-mahadi)
-- 📘 Facebook: [hasanal.mahadi.9](https://web.facebook.com/hasanal.mahadi.9/)
+- 📘 Facebook: [mahadi4u666](https://fb.com/mahadi4u666)
 - 📷 Instagram: [tem.mahadi](https://instagram.com/tem.mahadi)
 - 💻 Codeforces: [tem_mahadi_ruet](https://codeforces.com/profile/tem_mahadi_ruet)
+- 🏆 CodeChef: [tem_mahadi](https://www.codechef.com/users/tem_mahadi)
+- 💻 LeetCode: [mahadi4u](https://www.leetcode.com/mahadi4u)
 
 ## 🙏 Acknowledgments
 
