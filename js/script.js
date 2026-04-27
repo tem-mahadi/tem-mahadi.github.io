@@ -10,7 +10,7 @@ updateThemeIcon(currentTheme);
 themeToggle.addEventListener('click', () => {
     const theme = html.getAttribute('data-theme');
     const newTheme = theme === 'dark' ? 'light' : 'dark';
-    
+
     html.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     updateThemeIcon(newTheme);
@@ -50,13 +50,13 @@ let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     if (currentScroll > 100) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
     }
-    
+
     lastScroll = currentScroll;
 });
 
@@ -66,16 +66,16 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', () => {
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        
+
         if (pageYOffset >= sectionTop - 200) {
             current = section.getAttribute('id');
         }
     });
-    
+
     navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
@@ -100,7 +100,7 @@ let typingSpeed = 100;
 
 function type() {
     const currentText = texts[textIndex];
-    
+
     if (isDeleting) {
         typingText.textContent = currentText.substring(0, charIndex - 1);
         charIndex--;
@@ -110,7 +110,7 @@ function type() {
         charIndex++;
         typingSpeed = 100;
     }
-    
+
     if (!isDeleting && charIndex === currentText.length) {
         isDeleting = true;
         typingSpeed = 2000; // Wait before deleting
@@ -119,7 +119,7 @@ function type() {
         textIndex = (textIndex + 1) % texts.length;
         typingSpeed = 500; // Wait before typing next text
     }
-    
+
     setTimeout(type, typingSpeed);
 }
 
@@ -149,7 +149,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        
+
         if (target) {
             target.scrollIntoView({
                 behavior: 'smooth',
@@ -164,21 +164,21 @@ const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
-    
+
     // Create mailto link
     const mailtoLink = `mailto:mahadi4uruetcse21@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-    
+
     // Open email client
     window.location.href = mailtoLink;
-    
+
     // Show success message
     alert('Opening your email client. If it doesn\'t open automatically, please email me at mahadi4uruetcse21@gmail.com');
-    
+
     // Reset form
     contactForm.reset();
 });
@@ -186,11 +186,11 @@ contactForm.addEventListener('submit', (e) => {
 // Simple AOS (Animate On Scroll) implementation
 function animateOnScroll() {
     const elements = document.querySelectorAll('[data-aos]');
-    
+
     elements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
         const elementBottom = element.getBoundingClientRect().bottom;
-        
+
         if (elementTop < window.innerHeight && elementBottom > 0) {
             element.classList.add('aos-animate');
         }
@@ -214,11 +214,11 @@ window.addEventListener('scroll', () => {
 const projectCards = document.querySelectorAll('.project-card');
 
 projectCards.forEach(card => {
-    card.addEventListener('mouseenter', function() {
+    card.addEventListener('mouseenter', function () {
         this.style.transform = 'translateY(-10px) scale(1.02)';
     });
-    
-    card.addEventListener('mouseleave', function() {
+
+    card.addEventListener('mouseleave', function () {
         this.style.transform = 'translateY(0) scale(1)';
     });
 });
@@ -227,11 +227,11 @@ projectCards.forEach(card => {
 const skillItems = document.querySelectorAll('.skill-item');
 
 skillItems.forEach(item => {
-    item.addEventListener('mouseenter', function() {
+    item.addEventListener('mouseenter', function () {
         this.style.transform = 'translateY(-10px) rotate(5deg)';
     });
-    
-    item.addEventListener('mouseleave', function() {
+
+    item.addEventListener('mouseleave', function () {
         this.style.transform = 'translateY(0) rotate(0deg)';
     });
 });
@@ -260,13 +260,13 @@ if (circles.length === 0 && window.innerWidth > 768) {
 
 const cursorCircles = document.querySelectorAll('.circle');
 
-cursorCircles.forEach(function(circle, index) {
+cursorCircles.forEach(function (circle, index) {
     circle.x = 0;
     circle.y = 0;
     circle.style.backgroundColor = 'rgba(0, 217, 255, 0.1)';
 });
 
-window.addEventListener('mousemove', function(e) {
+window.addEventListener('mousemove', function (e) {
     coords.x = e.clientX;
     coords.y = e.clientY;
 });
@@ -274,21 +274,21 @@ window.addEventListener('mousemove', function(e) {
 function animateCircles() {
     let x = coords.x;
     let y = coords.y;
-    
-    cursorCircles.forEach(function(circle, index) {
+
+    cursorCircles.forEach(function (circle, index) {
         circle.style.left = x - 12 + 'px';
         circle.style.top = y - 12 + 'px';
-        
+
         circle.style.transform = `scale(${(cursorCircles.length - index) / cursorCircles.length})`;
-        
+
         circle.x = x;
         circle.y = y;
-        
+
         const nextCircle = cursorCircles[index + 1] || cursorCircles[0];
         x += (nextCircle.x - x) * 0.3;
         y += (nextCircle.y - y) * 0.3;
     });
-    
+
     requestAnimationFrame(animateCircles);
 }
 
@@ -317,7 +317,7 @@ if (profileViews) {
     const targetCount = parseInt(profileViews.textContent);
     const duration = 2000;
     const increment = targetCount / (duration / 16);
-    
+
     function updateCount() {
         count += increment;
         if (count < targetCount) {
@@ -327,14 +327,14 @@ if (profileViews) {
             profileViews.textContent = targetCount;
         }
     }
-    
+
     const observer = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
             updateCount();
             observer.disconnect();
         }
     });
-    
+
     observer.observe(profileViews);
 }
 
@@ -347,11 +347,11 @@ const statsObserver = new IntersectionObserver((entries) => {
             const target = entry.target;
             const text = target.textContent;
             const number = parseInt(text);
-            
+
             if (!isNaN(number)) {
                 let current = 0;
                 const increment = number / 50;
-                
+
                 const updateNumber = () => {
                     current += increment;
                     if (current < number) {
@@ -361,7 +361,7 @@ const statsObserver = new IntersectionObserver((entries) => {
                         target.textContent = number + '+';
                     }
                 };
-                
+
                 updateNumber();
                 statsObserver.unobserve(target);
             }
@@ -392,13 +392,13 @@ const konamiPattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLef
 document.addEventListener('keydown', (e) => {
     konamiCode.push(e.key);
     konamiCode = konamiCode.slice(-10);
-    
+
     if (konamiCode.join('') === konamiPattern.join('')) {
         document.body.style.animation = 'rainbow 2s infinite';
         setTimeout(() => {
             document.body.style.animation = '';
         }, 5000);
-        
+
         alert('🎉 You found the easter egg! You are so Lucky... ✨');
     }
 });
